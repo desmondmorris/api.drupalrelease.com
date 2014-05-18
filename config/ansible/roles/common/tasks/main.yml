@@ -1,0 +1,20 @@
+---
+# file: roles/common/tasks/main.yml
+
+  - name: Update Apt cache
+    apt: update_cache=yes
+    sudo: true
+
+  - name: General | Install required packages.
+    sudo: true
+    action: apt pkg={{ item }} state=installed
+    tags: common
+    with_items:
+      - build-essential
+      - python-software-properties
+      - curl
+      - git-core
+      - vim
+      - python
+      - g++
+      - make

@@ -1,0 +1,8 @@
+---
+# file: roles/redis/tasks/main.yml
+
+  - name: Install redis
+    sudo: true
+    apt: pkg=redis-server state=present
+    tags:
+      - redis

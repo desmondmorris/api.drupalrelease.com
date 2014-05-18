@@ -1,0 +1,18 @@
+{
+  "name": "drupal-projects-api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "Desmond Morris <hi@desmondmorris.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.2.0",
+    "redis": "^0.10.1",
+    "request": "^2.35.0",
+    "xml2js": "^0.4.2",
+    "redis-url": "~0.2.0"
+  },
+  "devDependencies": {
+    "node-dev": "^2.3.0"
+  }
+}
