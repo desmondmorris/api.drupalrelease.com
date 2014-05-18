@@ -2,9 +2,11 @@
 
 var express = require('express');
 var Project = require('./lib/project');
+var CacheControl = require("express-cache-control");
+var cache = new CacheControl().middleware;
 var app = express();
 
-app.get('/:project/:version', function(req, res){
+app.get('/:project/:version', cache("hours", 1), function(req, res){
 
   res.setHeader('Content-Type', 'application/json');
 

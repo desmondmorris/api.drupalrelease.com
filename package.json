@@ -10,7 +10,8 @@
     "redis": "^0.10.1",
     "request": "^2.35.0",
     "xml2js": "^0.4.2",
-    "redis-url": "~0.2.0"
+    "redis-url": "~0.2.0",
+    "express-cache-control": "~1.0.2"
   },
   "devDependencies": {
     "node-dev": "^2.3.0"
