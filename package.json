@@ -1,7 +1,8 @@
 {
   "name": "api.drupalreleases.com",
-  "version": "0.0.0",
-  "description": "",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A JSON proxy to drupal.org release history.",
   "main": "server.js",
   "author": "Desmond Morris <hi@desmondmorris.com>",
   "license": "MIT",
